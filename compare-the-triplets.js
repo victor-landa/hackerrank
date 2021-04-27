@@ -17,5 +17,3 @@ function compareTriplets(a, b) {
 
   return [aScore, bScore];
 }
-
-compareTriplets(a, b);
