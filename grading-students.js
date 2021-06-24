@@ -7,7 +7,7 @@ function gradingStudents(grades) {
 
   grades.map(grade => {
     if(grade >= 38) {
-      const nextMultiple = Math.ceil(grade/5.0) * 5;
+      const nextMultiple = Math.ceil(grade / 5) * 5;
       const logicRound = nextMultiple - grade;
       if(logicRound >= 3) {
         finalGrades.push(grade);
