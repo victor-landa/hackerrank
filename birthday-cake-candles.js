@@ -25,4 +25,4 @@ function birthdayCakeCandles(candles) {
   }
 }
 
-const result = birthdayCakeCandles(candles2);
+const result = birthdayCakeCandles(candles);
