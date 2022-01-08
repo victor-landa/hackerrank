@@ -7,16 +7,16 @@ function jumpingOnClouds(c) {
   let jumps = 0;
   let currentCloudIndex = 0;
 
-  while(currentCloudIndex + 1 < c.length) {
+  while(currentCloudIndex < c.length - 1) {
     if(c[currentCloudIndex + 1] === 0 && c[currentCloudIndex + 2] === 0) {
       currentCloudIndex += 2;
-      jumps += 1;
+      jumps++;
     } else if(c[currentCloudIndex + 1] === 0 && c[currentCloudIndex + 2] === 1) {
-      currentCloudIndex += 1;
-      jumps += 1;
+      currentCloudIndex++;
+      jumps++;
     } else {
       currentCloudIndex += 2;
-      jumps += 1;
+      jumps++;
     }
   }
   return jumps;
